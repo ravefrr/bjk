@@ -14,7 +14,8 @@
         function redirectToSound() {
             let soundId = document.getElementById('soundId').value;
             if (soundId) {
-                window.location.href = `https://create.roblox.com/store/asset/${soundId}`;
+                let url = `https://create.roblox.com/store/asset/${soundId}`;
+                window.open(url, '_blank');
             } else {
                 alert("Please enter a valid Roblox Sound ID.");
             }
